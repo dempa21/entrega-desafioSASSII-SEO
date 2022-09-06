@@ -1,0 +1,11 @@
+@mixin texto-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px 20px;
+    color: #454546;
+    font-family: "Poppins";
+}
+
+.main-header__title {
+    @include texto-header;
+}

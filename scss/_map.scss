@@ -1,0 +1,31 @@
+$colors: map-merge(
+    (
+      "black-1": black,
+      "red-1": red,
+      "300": #333,
+      "white-1": white,
+      "dark-gray-1": rgba(255,255,255,0.2),
+    ),
+    $colors
+);
+
+
+.char {
+    color: map-get($colors , 300);
+}
+
+.char h2{
+    color: map-get($colors , red-1);
+}
+
+.char__circle {
+    color: map-get($colors , black-1);
+}
+
+.editor__circle {
+    color: map-get($colors , white-1);
+}
+
+.editor__item:before {
+    color: map-get($colors , dark-gray-1);
+}
